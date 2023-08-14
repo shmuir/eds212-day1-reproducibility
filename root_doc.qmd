@@ -1,0 +1,28 @@
+---
+title: "root doc"
+format: html
+editor: source
+execute: 
+    warning: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+## Read in Data
+
+```{r}
+energy <- read_csv("data/us_energy.csv")
+head(energy)
+```
+
+#### Exploratory chart
+
+```{r}
+ggplot(energy, aes(year, quadrillion_btu, color = type)) +
+  geom_line() +
+  theme_linedraw()
+```
+
