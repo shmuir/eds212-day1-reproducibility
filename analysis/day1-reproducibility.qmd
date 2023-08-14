@@ -8,6 +8,10 @@ execute:
 ---
 
 ```{r}
+library(tidyverse)
+```
 
+```{r}
+energy2 <- read_csv("../data/us_energy.csv")
 ```
 
